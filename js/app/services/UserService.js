@@ -3,8 +3,8 @@ function UserService($http) {
 		return $http.get('http://0.0.0.0:8882/rest/user')
 	}
 
-	this.updateUser() {
-		return $http.post('http://0.0.0.0:8882/rest/user');
+	this.updateUser(userInfo) {
+		return $http.post('http://0.0.0.0:8882/rest/user', userInfo);
 	}
 }
 
